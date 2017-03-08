@@ -1,0 +1,15 @@
+<div class="contents">
+
+  <div class="tweet_contents">
+    <% @tweet.each do |tweet| %>
+      <div class="tweets">
+        <%= image_tag(tweet.image, class: :tweet_img) %>
+        <!-- <%= image_tag("pic1.jpg", class: :tweet_img)%> -->
+        <p class="longi"><%= tweet.haiku1 %></p>
+        <p class="longi2"><%= tweet.haiku2 %></p>
+        <p class="longi3"><%= tweet.haiku3 %></p>
+      <div>
+    <% end %>
+  </div>
+
+</div>
