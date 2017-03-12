@@ -22,15 +22,21 @@ h1, h2, h3, h4, h5, h6, p, body {
   background-color: white;
   position: fixed;
   z-index: 5;
+  background-color: #00e673;
+  color: white;
 
   .header_title{
-    background-color: blue;
     font-family: fantasy;
     font-size: 30px;
     line-height: 60px; //中央揃えのため　headerのheight60pxと同じ値を与えている
     width: 30%;
     text-align: center;
     float: left;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
   }
 
   .header_box{
@@ -43,7 +49,6 @@ h1, h2, h3, h4, h5, h6, p, body {
     height: 100%;
     line-height: 60px;
     margin-right: 20px;
-    background-color: red; 
   }
 
 }
@@ -60,20 +65,32 @@ h1, h2, h3, h4, h5, h6, p, body {
   width: 60%;
   height: 100%;
   background-color: white;
-  padding-top: 10px;
 }
 
 .tweets{
   width: 100%;
-  height: 500px;
-  border-radius: 5px;
+  height: 550px;
+  // border-radius: 5px;
   position: relative;
+}
+
+.tweet_user_box{
+  width: 100%;
+  height: 60px;
+  background-color: yellow;
+}
+
+.user_pic{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
 }
 
 .tweet_img{
   width: 100%;
   height: 400px;
-
 }
 
 .longi{
@@ -81,7 +98,7 @@ h1, h2, h3, h4, h5, h6, p, body {
   font-size: 40px;
   color: white;
   right: 10px;
-  top: 30px;
+  top: 90px;
   writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode:vertical-rl;
@@ -92,7 +109,7 @@ h1, h2, h3, h4, h5, h6, p, body {
   font-size: 40px;
   color: white;
   right: 60px;
-  top: 80px;
+  top: 140px;
   writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode:vertical-rl;
@@ -103,10 +120,16 @@ h1, h2, h3, h4, h5, h6, p, body {
   font-size: 40px;
   color: white;
   right: 110px;
-  top: 130px;
+  top: 190px;
   writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode:vertical-rl;
+}
+
+.tweet_comment_box{
+  width: 100%;
+  height: 100px;
+  background-color: red;
 }
 
 

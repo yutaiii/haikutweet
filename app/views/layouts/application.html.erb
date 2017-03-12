@@ -8,16 +8,26 @@
 </head>
 <body>
   <header class="header">
-    <div class="header_title">
+    <a href="/"><div class="header_title">
       俳句tweet
-    </div>
+    </div></a>
     <div class="header_box">
-      <div class="header_check">
-       ログイン
-      </div>
-      <div class="header_check">
-       新規登録
-      </div>
+      <% if user_signed_in? %>
+        <div class="header_check">
+         投稿する
+        </div>
+        <div class="header_check">
+         ログアウト
+        </div>
+      <% else %>
+        <div class="header_check">
+         <%= link_to 'ログイン', 'new_user_session_path' %>
+        </div>
+        <div class="header_check">
+         新規登録
+        </div>
+        puts 'not signind in'
+      <% end %>
     </div>
   </header>
 
